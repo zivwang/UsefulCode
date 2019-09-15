@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerPointAddInLearning", "PowerPointAddInLearning\PowerPointAddInLearning.csproj", "{D2A15CE8-F704-4BBB-A5D8-1A3ECB52FF3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{E4A28057-E3ED-4C64-99DC-6FB22EDDFE31}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2A15CE8-F704-4BBB-A5D8-1A3ECB52FF3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2A15CE8-F704-4BBB-A5D8-1A3ECB52FF3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2A15CE8-F704-4BBB-A5D8-1A3ECB52FF3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2A15CE8-F704-4BBB-A5D8-1A3ECB52FF3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4A28057-E3ED-4C64-99DC-6FB22EDDFE31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4A28057-E3ED-4C64-99DC-6FB22EDDFE31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4A28057-E3ED-4C64-99DC-6FB22EDDFE31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4A28057-E3ED-4C64-99DC-6FB22EDDFE31}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4B08E6AF-2E29-4B31-BDD5-CB825B6CA2FA}
+	EndGlobalSection
+EndGlobal

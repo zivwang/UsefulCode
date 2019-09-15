@@ -1,0 +1,16 @@
+E:\Dev\OfficeAddInLearning\PowerPointAddInLearning\PowerPointAddInLearning\bin\Debug\PowerPointAddInLearning.dll
+E:\Dev\OfficeAddInLearning\PowerPointAddInLearning\PowerPointAddInLearning\bin\Debug\PowerPointAddInLearning.pdb
+E:\Dev\OfficeAddInLearning\PowerPointAddInLearning\PowerPointAddInLearning\bin\Debug\PowerPointAddInLearning.dll.manifest
+E:\Dev\OfficeAddInLearning\PowerPointAddInLearning\PowerPointAddInLearning\bin\Debug\PowerPointAddInLearning.vsto
+E:\Dev\OfficeAddInLearning\PowerPointAddInLearning\PowerPointAddInLearning\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+E:\Dev\OfficeAddInLearning\PowerPointAddInLearning\PowerPointAddInLearning\obj\Debug\PowerPointAddInLearning.csprojAssemblyReference.cache
+E:\Dev\OfficeAddInLearning\PowerPointAddInLearning\PowerPointAddInLearning\obj\Debug\PowerPointAddInLearning.Properties.Resources.resources
+E:\Dev\OfficeAddInLearning\PowerPointAddInLearning\PowerPointAddInLearning\obj\Debug\PowerPointAddInLearning.Ribbon1.resources
+E:\Dev\OfficeAddInLearning\PowerPointAddInLearning\PowerPointAddInLearning\obj\Debug\PowerPointAddInLearning.TestCustomizeTaskPane.resources
+E:\Dev\OfficeAddInLearning\PowerPointAddInLearning\PowerPointAddInLearning\obj\Debug\PowerPointAddInLearning.csproj.GenerateResource.cache
+E:\Dev\OfficeAddInLearning\PowerPointAddInLearning\PowerPointAddInLearning\obj\Debug\PowerPointAddInLearning.csproj.CoreCompileInputs.cache
+E:\Dev\OfficeAddInLearning\PowerPointAddInLearning\PowerPointAddInLearning\obj\Debug\PowerPointAddInLearning.csproj.CopyComplete
+E:\Dev\OfficeAddInLearning\PowerPointAddInLearning\PowerPointAddInLearning\obj\Debug\PowerPointAddInLearning.dll
+E:\Dev\OfficeAddInLearning\PowerPointAddInLearning\PowerPointAddInLearning\obj\Debug\PowerPointAddInLearning.pdb
+E:\Dev\OfficeAddInLearning\PowerPointAddInLearning\PowerPointAddInLearning\bin\Debug\MouseKeyboardActivityMonitor.dll
+E:\Dev\OfficeAddInLearning\PowerPointAddInLearning\PowerPointAddInLearning\bin\Debug\MouseKeyboardActivityMonitor.xml
