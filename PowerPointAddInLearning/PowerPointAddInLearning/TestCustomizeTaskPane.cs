@@ -127,34 +127,92 @@ namespace PowerPointAddInLearning
                 Directory.CreateDirectory(path);
             }
 
-            File.Delete(path + "laporan.xlsx"); // DELETE THE FILE BEFORE CREATING A NEW ONE.
+            File.Delete(path + "laporan2.xlsx"); // DELETE THE FILE BEFORE CREATING A NEW ONE.
 
 
             //建立Excel物件
             Excel.Application excelApp = new Excel.Application();
 
             //新建工作簿
-            Excel.Workbook workBook = excelApp.Workbooks.Add(true);
-
+            Excel.Workbook workBook = excelApp.Workbooks.Open(path + "laporan1.xlsx", Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
+            
             //新建工作表
-            Excel.Worksheet worksheet = workBook.ActiveSheet as Excel.Worksheet;
+            Excel.Worksheet ws = workBook.ActiveSheet as Excel.Worksheet;
+
+            //Excel.Range originalRange = ws.Cells[4, 1];
+            //originalRange.Copy();
+            //Excel.Range destRange = ws.Cells[4, 2];
+            //destRange.PasteSpecial(Excel.XlPasteType.xlPasteFormats);
+            //for(int i = 0; i<60; i++)
+            //{
+            //    //PasteSpecial(4 + i, 1, 4 + i, 2, ref ws);
+            //    PasteSpecial(4 + i, 1, ws.Range["E5:E90"], ref ws);
+
+            //    //ws.Range["E5", "F9"]
+            //}
+            PasteSpecial(ws.Range["A4:A30"], ws.Range["E5:E90"]);
+            //PasteSpecial(4, 1, ws.Range["E5:E90"], ref ws);
+
+            //Copies cell C3
+            //Range cellToCopy = (Range)activeWorksheet.Cells[3, 3];
+            //cellToCopy.Copy();
+
+            ////Paste format only to the cell C5
+            //Range cellToPaste = (Range)activeWorksheet.Cells[5, 3];
+            //cellToPaste.PasteSpecial(XlPasteType.xlPasteFormats);
 
             //int year = 2019;
             //int month = 5;
             //int row = 2;
             //int column = 2;
-            GeneateCalendar(2019, 5, 1, 1, ref worksheet);
+            //GeneateCalendar(2019, 5, 20, 15, ref ws);
 
-            worksheet.SaveAs(path + "laporan.xlsx");
+            ws.SaveAs(path + "laporan2.xlsx");
+
+            workBook.Save();
+            //workBook = null;
             excelApp.Workbooks.Close();
             excelApp.Quit();
             excelApp = null;
-            worksheet = null;
+            ws = null;
         }
         //private void ApplicationOnWindowBeforeDoubleClick(Selection Sel, ref bool Cancel)
         //{
         //    System.Console.WriteLine("double clck");
         //}
+        //private void PasteSpecial(int sourceRow, int sourceColumn, int destinyRow, int destinyColumn, ref Excel.Worksheet ws)
+        //{
+
+        //    Excel.Range originalRange = ws.Cells[sourceRow, sourceColumn];
+        //    originalRange.Copy();
+        //    //Excel.Range
+        //    Excel.Range destinyRange = ws.Range["E5", "F9"];
+        //    destinyRange.PasteSpecial(Excel.XlPasteType.xlPasteFormats);
+        //}
+        //private void PasteSpecial(int sourceRow, int sourceColumn, Excel.Range destinyRange, ref Excel.Worksheet ws)
+        //{
+        //    Excel.Range originalRange = ws.Cells[sourceRow, sourceColumn];
+        //    originalRange.Copy();
+        //    destinyRange.PasteSpecial(Excel.XlPasteType.xlPasteFormats);
+        //}
+        private void PasteSpecial(int sourceRow, int sourceColumn, Excel.Range destinyRange, ref Excel.Worksheet ws)
+        {
+            Excel.Range originalRange = ws.Cells[sourceRow, sourceColumn];
+            originalRange.Copy();
+            destinyRange.PasteSpecial(Excel.XlPasteType.xlPasteFormats);
+        }
+        private void PasteSpecial(int sourceRow, int sourceColumn, int destinyRow, int destinyColumn, ref Excel.Worksheet ws)
+        {
+            Excel.Range originalRange = ws.Cells[sourceRow, sourceColumn];
+            originalRange.Copy();
+            Excel.Range destinyRange = ws.Cells[destinyRow, destinyColumn];
+            destinyRange.PasteSpecial(Excel.XlPasteType.xlPasteFormats);
+        }
+        private void PasteSpecial(Excel.Range sourceRange, Excel.Range destinyRange)
+        {
+            sourceRange.Copy();
+            destinyRange.PasteSpecial(Excel.XlPasteType.xlPasteFormats);
+        }
 
         private void Application_PresentationNewSlide(Slide Sld)
         {
